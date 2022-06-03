@@ -12,7 +12,7 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
   const container = generateBlockClass(styles.container, blockClass)
   const container_item = generateBlockClass(styles.container_item, blockClass)
   const container_botom = generateBlockClass(styles.container_botom, blockClass)
-  console.log("Informacion del producto", productInfo);
+  // console.log("Informacion del producto", productInfo);
 
 
 
@@ -22,8 +22,6 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
       <div className={container}>
         {
           items.map((item: any, index: any) => {
-            console.log("Informacion del item", item);
-
             return (
               <div key={index} className={container_item}>
                 <div>
