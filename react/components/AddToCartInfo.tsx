@@ -1,18 +1,14 @@
 import React from 'react';
-import { useProduct } from 'vtex.product-context';
 import { useOrderForm } from 'vtex.order-manager/OrderForm'
-// import Totalizers from './Totalizers';
 import ButtonGroup from './ButtonGroup';
 import { generateBlockClass } from '@vtex/css-handles';
 import styles from './styles.css'
 
 const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
-  const productInfo = useProduct()
   const { orderForm: { items, totalizers } } = useOrderForm();
   const container = generateBlockClass(styles.container, blockClass)
   const container_item = generateBlockClass(styles.container_item, blockClass)
   const container_botom = generateBlockClass(styles.container_botom, blockClass)
-  // console.log("Informacion del producto", productInfo);
 
 
 
@@ -52,7 +48,3 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
 }
 
 export default AddToCartInfo
-
-// ProductGroup  ==> Listado de productos
-// Totalizers  ==> Valor total
-// ButtonGroup  ==> Acciones

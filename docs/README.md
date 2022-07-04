@@ -1,114 +1,57 @@
-📢 Use this project, [contribute](https://github.com/{OrganizationName}/{AppName}) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
+# Clone Página Carulla
 
-# APP NAME
+## Descripción
 
-<!-- DOCS-IGNORE:start -->
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-<!-- DOCS-IGNORE:end -->
+> El componente add-to-cart-info muestra información del carrito de compras al momento de agregar un nuevo producto al mismo. Esta información es:
 
-Under the app's name, you should explain the topic, giving a **brief description** of its **functionality** in a store when installed.
+1. Listado de productos existentes en el carrito
+2. Opción de ir a cerrar la compra
+3. Opción de seguir comprando
+4. Opción de ir al carrito de compra
 
-Next, **add media** (either an image of a GIF) with the rendered components, so that users can better understand how the app works in practice. 
-
-![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
-
-## Configuration 
-
-In this section, you first must **add the primary instructions** that will allow users to use the app's blocks in their store, such as:
-
-1. Adding the app as a theme dependency in the `manifest.json` file;
-2. Declaring the app's main block in a given theme template or inside another block from the theme.
-
-Remember to add a table with all blocks exported by the app and their descriptions. You can verify an example of it on the [Search Result documentation](https://vtex.io/docs/components/all/vtex.search-result@3.56.1/). 
-
-Next, add the **props table** containing your block's props. 
-
-If the app exports more than one block, create several tables - one for each block. For example:
-
-### `block-1` props
-
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
+![Home](/docs/images/add_to_cart_info.png "Imagen del Home")
 
 
-### `block-2` props
+#### Configuración Inicial
 
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
+Prepara un espacio de trabajo en como desarrollador para poder trabajar.
 
-Prop types are: 
+##### Clonar el repositorio
 
-- `string` 
-- `enum` 
-- `number` 
-- `boolean` 
-- `object` 
-- `array` 
-
-When documenting a prop whose type is `object` or `array` another prop table will be needed. You can create it following the example below:
-
-- `propName` object:
-
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
+Desde el siguiente enlace podrás clonar el repositorio y poder trabajar en el desde la computadora local 
+## [clonar repositorio](https://github.com/CarlosGiovannyG/Reto_Uno.git "clonar repositorio") 
 
 
-Remember to also use this Configuration section to  **showcase any necessary disclaimer** related to the app and its blocks, such as the different behavior it may display during its configuration. 
+Configurar archivo **manifest.json**
 
-## Modus Operandi *(not mandatory)*
+Abrir el repositorio en un editor de código, acceder al archivo manifest.json ubicado en la carpeta **reto-one-store-theme** y reemplazar el **vendor** por el suyo y en el campo **name** darle el nombre deseado para el tema
 
-There are scenarios in which an app can behave differently in a store, according to how it was added to the catalog, for example. It's crucial to go through these **behavioral changes** in this section, allowing users to fully understand the **practical application** of the app in their store.
+##### Ejemplo
 
-If you feel compelled to give further details about the app, such as it's **relationship with the VTEX admin**, don't hesitate to use this section. 
+```
+  {
+  “vendor”:”itgloberspartnercl”,
+  “vendor”:”clone-carulla-store.theme”
+  }
 
-## Customization
+```
 
-The first thing that should be present in this section is the sentence below, showing users the recipe pertaining to CSS customization in apps:
+##### Vista local
 
-`In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization).`
-
-Thereafter, you should add a single column table with the available CSS handles for the app, like the one below. Note that the Handles must be ordered alphabetically.
-
-| CSS Handles |
-| ----------- | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` |
+Antes de hacer link al store theme es necesario clonar y tener linkiados los siguientes componentes custom
 
 
-If there are none, add the following sentence instead:
+- itgloberspartnercl-add-to-cart-info
+- itgloberspartnercl-bullets-diagramation
+- itgloberspartnercl-custom-crhonometer
+- itgloberspartnercl-custom-department-search
+- itgloberspartnercl-custom-diagramation-template
+- itgloberspartnercl-custom-termometer
+- itgloberspartnercl-gilla-promotions
+- itgloberspartnercl-html-pdf
+- itgloberspartnercl-quick-order
+- itgloberspartnercl-whatssapp-button
 
-`No CSS Handles are available yet for the app customization.`
+Cuyas carpetas se encuentran dentro del repositorio. Se debe hacer la misma configuración en los respectivos archivos **manifest.json** de cada componente.
 
-<!-- DOCS-IGNORE:start -->
-
-## Contributors ✨
-
-Thanks goes to these wonderful people:
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
-
-<!-- DOCS-IGNORE:end -->
-
----- 
-
-Check out some documentation models that are already live: 
-- [Breadcrumb](https://github.com/vtex-apps/breadcrumb)
-- [Image](https://vtex.io/docs/components/general/vtex.store-components/image)
-- [Condition Layout](https://vtex.io/docs/components/all/vtex.condition-layout@1.1.6/)
-- [Add To Cart Button](https://vtex.io/docs/components/content-blocks/vtex.add-to-cart-button@0.9.0/)
-- [Store Form](https://vtex.io/docs/components/all/vtex.store-form@0.3.4/)
+> Linkiar cada componente en su espacio de trabajo y por ultimo Linkiar el store-theme de la tienda.

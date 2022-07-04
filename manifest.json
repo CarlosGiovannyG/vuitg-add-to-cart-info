@@ -1,7 +1,7 @@
 {
-  "vendor": "vuitg",
+  "vendor": "itgloberspartnercl",
   "name": "add-to-cart-info",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Add to cart info",
   "description": "Componente que mostrará información almomento de agregar un producto al carrito de compras",
   "builders": {

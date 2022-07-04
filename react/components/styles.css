@@ -1,28 +1,67 @@
-.container{
-min-width: 1000px;
-max-width: 1000px;
-min-height: 400px;
-max-height: 600px;
-overflow-y: auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+.container {
+  min-width: 1000px;
+  max-width: 1200px;
+  min-height: 400px;
+  max-height: 600px;
+  overflow-y: auto;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border: 1.5px solid rgba(141, 198, 63, 0.78);
+  padding: 20px;
 }
 
-.container_item{
-  background-color: wheat;
+.container_item {
   margin: 5px auto;
-  border: 3px solid green;
+  border: 1px solid rgba(141, 198, 63, 0.78);
   border-radius: 15px;
   min-width: 200px;
-max-width: 200px;
-min-height: 300px;
-max-height:max-content;
+  max-width: 200px;
+  min-height: 300px;
+  max-height: max-content;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-.container_botom{
+.container_botom {
+  width: max-content;
+  margin: 0.5rem auto;
   display: flex;
-  background-color: aquamarine;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 1.4rem;
+  padding: 0.8rem;
+}
+
+.container_botom>div:nth-child(1)>a {
+  text-decoration: none;
+}
+
+.container_botom>div:nth-child(2)>button {
+  border: none;
+  background: none;
+}
+
+.container_botom>div:nth-child(3)>a {
+  text-decoration: none;
+}
+
+.container_botom>div:nth-child(1)>a,
+.container_botom>div:nth-child(2)>button,
+.container_botom>div:nth-child(3)>a {
+  background-color: rgba(214, 208, 208, 0.644);
+  color: #4b7c07;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgba(141, 198, 63, 0.78);
+  transition: all 0.8s;
+}
+
+.container_botom>div:nth-child(1) :hover,
+.container_botom>div:nth-child(2) :hover,
+.container_botom>div:nth-child(3) :hover {
+  color: rgba(247, 236, 236, 0.979);
+  background-color: rgb(99, 163, 9);
 }
